@@ -1,0 +1,49 @@
+
+
+.about {
+    --myMargin: 20px;
+    margin:var(--myMargin);
+}
+.about h1 {
+    text-align: center;
+}
+
+
+.about li {
+    width: 400px;
+    height: 500px; 
+    border: 1px solid black;
+    list-style: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px gray;
+
+}
+
+.about li h2 {
+    text-align: center;
+}
+.about li img {
+    display:block;
+    margin:auto;
+}
+.about li p {
+    border: 1px solid black;
+    margin: var(--myMargin);
+    height: 100px;
+
+}
+.about li a {
+    margin: var(--myMargin);
+}
+
+
+
+.about ul {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: var(--myMargin);
+
+}
