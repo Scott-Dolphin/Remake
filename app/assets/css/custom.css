@@ -11,7 +11,7 @@
 
 .about li {
     width: 400px;
-    height: 500px; 
+    height: 650px; 
     border: 1px solid black;
     list-style: none;
     border-radius: 10px;
@@ -19,18 +19,26 @@
     box-shadow: 10px 10px 10px gray;
 
 }
+.about li .links {
+    display: flex;
+    justify-content: space-around;
+}
 
 .about li h2 {
     text-align: center;
 }
-.about li img {
+.pfp {
     display:block;
     margin:auto;
 }
+.about li .ico {
+    width: 20px;
+}
+
 .about li p {
     border: 1px solid black;
     margin: var(--myMargin);
-    height: 100px;
+    height: 225px;
 
 }
 .about li a {
