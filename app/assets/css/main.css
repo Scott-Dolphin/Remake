@@ -1,7 +1,7 @@
 html {
     --font-serif: 'IBM Plex Serif', 'Georgia', serif;
     --font-mono: 'IBM Plex Mono', 'Monaco', 'Courier', monospace;
-    --theme-color: #0dad80;
+    --theme-color: #0d3aad;
     --font-color: #111;
     font-size: 18px;
 }
@@ -108,7 +108,8 @@ body {
     position: fixed;
     top: 1em;
     left: calc(50% - 8px);
-    pointer-events: none; /* to prevent movement */
+    pointer-events: none;
+    /* to prevent movement */
     color: #fff;
 }
 
@@ -184,7 +185,6 @@ article {
     margin: 2em auto;
 }
 
-header,
 footer,
 article,
 .hero {
@@ -195,9 +195,12 @@ article,
     margin-right: auto;
 }
 
-header::before, header::after,
-footer::before, footer::after,
-.hero::before, .hero::after {
+header::before,
+header::after,
+footer::before,
+footer::after,
+.hero::before,
+.hero::after {
     content: '';
     display: block;
     position: absolute;
@@ -216,7 +219,8 @@ footer::after,
     left: 100%;
 }
 
-[new\:topic], [new\:link] {
+[new\:topic],
+[new\:link] {
     cursor: pointer;
 }
 
@@ -332,7 +336,8 @@ section h2 {
     --font-color: #fff;
     color: var(--font-color);
     background: var(--theme-color);
-    margin-top: -1px; /* blocks.css sizing quirk */
+    margin-top: -1px;
+    /* blocks.css sizing quirk */
 }
 
 .popular-bio {
