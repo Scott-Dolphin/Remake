@@ -1,8 +1,10 @@
 html {
     --font-serif: 'IBM Plex Serif', 'Georgia', serif;
     --font-mono: 'IBM Plex Mono', 'Monaco', 'Courier', monospace;
-    --theme-color: #0d3aad;
-    --font-color: #111;
+    --theme-color: #475841;
+    --sub-theme-color: #9FB8AD;
+    --font-color: #3F403F;
+    background-color: #E6E8E6;
     font-size: 18px;
 }
 
@@ -335,7 +337,7 @@ section h2 {
 .popular-header {
     --font-color: #fff;
     color: var(--font-color);
-    background: var(--theme-color);
+    background: var(--sub-theme-color);
     margin-top: -1px;
     /* blocks.css sizing quirk */
 }
