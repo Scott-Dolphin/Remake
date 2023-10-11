@@ -1,0 +1,76 @@
+/* Start for entry format */
+header {
+    padding: 1em;
+    --font-color: #111;
+}
+
+.entrynav {
+    z-index: 1;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    background: var(--block-background-color);
+    border-bottom: var(--font-color) solid 3px;
+}
+
+.entrynav .left, .entrynav .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-left: var(--font-color) solid 3px;
+    border-right: var(--font-color) solid 3px;
+}
+
+.entrynav .left a, .entrynav .right a {
+    margin: .6em;
+    color: var(--font-color);
+}
+
+.entryTitle {
+    text-align: center;
+    margin: 3em;
+}
+
+.floatbox {
+    width: 800px;
+    margin: auto;
+    background: var(--theme-color);
+    padding: 50px;
+    border-radius: 35px;
+    transition: width .8s;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.floatbox div {
+    width: 300px;
+}
+
+.entryinfo {
+    width: 300px;
+    text-align: left;
+    margin-left: 1em;
+    transition: margin 3s;
+}
+
+@media only screen and (max-width: 1000px) {
+    .floatbox {
+        width: 500px;
+    }
+
+    .entryinfo {
+        margin-left:3em;
+        text-align: left;
+    }
+}
+
+.login {
+    width:fit-content;
+}

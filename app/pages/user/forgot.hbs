@@ -1,7 +1,12 @@
+{{layout "entry"}}
+<script>
+    document.title = "Forgot Password - Weekly Planner";
+
+</script>
 <header>
-    <nav class="split">
+    <nav class="entrynav">
         <div class="left">
-            <a href="/">Shelf.page</a>
+            <a href="/">Weekly Planner</a>
         </div>
         <div class="right">
             <a href="/user/login">Log in</a>
@@ -9,19 +14,21 @@
     </nav>
 </header>
 
-<div class="hero">
+<div class="entryTitle">
     <h1>Recover your password</h1>
 </div>
 
-<article>
+<div class="floatbox">
+    <div>
     <form action="/user/forgot" method="post">
         <label>
             <span>Username</span>
             <div class="fixed block input-wrapper">
-                <input type="text" name="username" required
-                                   placeholder="thesephist">
+                <input type="text" name="username" required placeholder="thesephist">
             </div>
         </label>
         <button class="accent block" type="submit">Send reset link</button>
     </form>
-</article>
+    </div>
+    <div class="entryinfo">Enter username to begin password recovery.</div>
+</div>
