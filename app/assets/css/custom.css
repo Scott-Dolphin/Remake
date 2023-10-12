@@ -87,16 +87,20 @@ html {
 
 .nav-bar .left a,
 .nav-bar .right a {
-    font-size: 20px;
+    font-size: var(--myMargin);
     padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
     animation: bounce 800ms;
-    transition-duration: .2s;
+    transition: .2s;
+    position: relative;
 }
 
 .nav-bar .left a:hover,
 .nav-bar .right a:hover {
     animation: bounce 800ms;
-    background-color: #e6e8e6;
+    background-color: var(--off-white);
     color: #3f403f;
 }
 
