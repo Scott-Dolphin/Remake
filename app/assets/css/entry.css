@@ -2,11 +2,12 @@
 header {
     padding: 1em;
     --font-color: #111;
+    background-color: transparent;
 }
 
 .entrynav {
     z-index: 1;
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,6 +42,7 @@ header {
     margin: auto;
     background: var(--theme-color);
     padding: 50px;
+    border: var(--font-color) solid 3px;
     border-radius: 35px;
     transition: width .8s;
     text-align: left;
@@ -51,6 +53,8 @@ header {
 
 .floatbox div {
     width: 300px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px black;
 }
 
 .entryinfo {
@@ -73,4 +77,9 @@ header {
 
 .login {
     width:fit-content;
+}
+
+.login-alt {
+    color:white;
+    text-decoration: none;
 }

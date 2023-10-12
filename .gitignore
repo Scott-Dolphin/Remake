@@ -11,3 +11,6 @@ app/data/uploads
 .cache/
 
 _remake/.sessions
+
+package.json
+package-lock.json
