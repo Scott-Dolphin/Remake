@@ -1,14 +1,26 @@
 <header>
-    <nav class="split">
+    <nav class="nav-bar">
         <div class="left">
-            <a href="/">PlannerPlain</a>
+            <a href="/">Workout.Planner</a>
+            <a href="/about">About</a>
+            <a href="/">Something</a>
         </div>
         <div class="right">
+            {{#if currentUser}}
+            <a href="/user/logout">Log out</a>
+            <a href="/{{currentUser.details.username}}">Your shelf &rarr;</a>
+            {{else}}
             <a href="/user/login">Log in</a>
+            <a href="/user/signup">Sign up &rarr;</a>
+            {{/if}}
         </div>
     </nav>
-    <h1>Meet the team</h1>
 </header>
+
+<div class="hero">
+    <h1>Meet The Team</h1>
+</div>
+
 <div class="about">
     <ul>
         <li>
@@ -18,11 +30,11 @@
             <div class="links">
                 <a href="https://github.com/">
                 <i class="bi bi-github"></i>
-                <span>github</span> 
+                <span>github</span>
             </a>
             <a href="https://github.com/">
                 <i class="bi bi-linkedin"></i>
-                <span>linkedin</span> 
+                <span>linkedin</span>
             </a>
             </div>
 
@@ -35,11 +47,11 @@
             <div class="links">
                 <a href="https://github.com/">
                 <i class="bi bi-github"></i>
-                <span>github</span> 
+                <span>github</span>
             </a>
             <a href="https://github.com/">
                 <i class="bi bi-linkedin"></i>
-                <span>linkedin</span> 
+                <span>linkedin</span>
             </a>
         </li>
         <li>
@@ -49,11 +61,11 @@
             <div class="links">
                 <a href="https://github.com/">
                 <i class="bi bi-github"></i>
-                <span>github</span> 
+                <span>github</span>
             </a>
             <a href="https://github.com/">
                 <i class="bi bi-linkedin"></i>
-                <span>linkedin</span> 
+                <span>linkedin</span>
             </a>
         </li>
         <li>
@@ -63,11 +75,11 @@
             <div class="links">
                 <a href="https://github.com/">
                 <i class="bi bi-github"></i>
-                <span>github</span> 
+                <span>github</span>
             </a>
             <a href="https://github.com/">
                 <i class="bi bi-linkedin"></i>
-                <span>linkedin</span> 
+                <span>linkedin</span>
             </a>
         </li>
     </ul>

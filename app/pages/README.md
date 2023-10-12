@@ -28,7 +28,13 @@ There are a few special pages you should know about:
 * All the templates in `/pages/user` are used to render special account-level pages (e.g. the sign up page, the login page, the forgot password page, and the reset password page). They have special names that can't be changed, but you have complete control over their CSS and HTML.
 
 
+---
+# Github cheat sheet
+```
+git fetch origin
+git merge origin/master
 
 
+```
 
 

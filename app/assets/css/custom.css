@@ -83,6 +83,10 @@
     animation: bounce 800ms;
 }
 
+.hero h1 {
+    text-align: center;
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -163,7 +167,6 @@
 .calendar-dates {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     list-style-type: none;
     padding: 0;
     margin-left: 15px;
@@ -186,4 +189,69 @@
 
 .calendar-dates li {
     border: 2px solid black;
+}
+
+.events-page {
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-container {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.events-list {
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.events-list li {
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.workout-header {
+    border: 1px solid black;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workout-body {
+    border: 1px solid black;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercises-container {
+    height: 95%;
+}
+
+.events-list h1, .events-list h2, h3 {
+    padding: 0;
+    margin: 0;
 }

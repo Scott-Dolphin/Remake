@@ -1,8 +1,8 @@
 html {
-    --font-serif: 'IBM Plex Serif', 'Georgia', serif;
-    --font-mono: 'IBM Plex Mono', 'Monaco', 'Courier', monospace;
-    --theme-color: #0d3aad;
-    --font-color: #111;
+    --font-serif: 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif';
+    --font-mono: 'Avant Garde', 'Avantgarde', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif';
+    --theme-color: #9fb8ad;
+    --font-color: #3f403f;
     font-size: 18px;
 }
 
