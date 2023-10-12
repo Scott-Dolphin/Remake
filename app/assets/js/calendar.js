@@ -1,5 +1,3 @@
-console.log("adfasdf")
-
 let date = new Date();
 let year = date.getFullYear();
 let month = date.getMonth();
@@ -33,7 +31,21 @@ const calendar = () => {
     let calendarHTML = "";
 
     for (let i = firstDay; i>0; i--) {
-        calendarHTML += `<li class="inactive">${prevMonthLastDate - i + 1}</li>`;
+        calendarHTML += 
+        `<li class="inactive">
+            <div>
+                ${prevMonthLastDate - i + 1}
+            </div>
+            <div object>
+                <ul array key="${new Date(year, month, prevMonthLastDate - i + 1)}>
+                    {{#for event in ${new Date(year, month, prevMonthLastDate - i + 1)}}}
+                        <li>
+                            {{event.name}}
+                        </li>
+                    {{/for}}
+                </ul>
+            </div>
+        </li>`;
 
     }
     
