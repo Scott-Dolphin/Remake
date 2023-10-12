@@ -1,8 +1,11 @@
 /* Start for entry format */
 header {
     padding: 1em;
-    --font-color: #111;
-    background-color: transparent;
+
+    --theme-color: #9fb8ad;
+    --sub-theme-color: #475841;
+    --font-color: #3f403f;
+
 }
 
 .entrynav {
@@ -15,7 +18,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: var(--block-background-color);
+    background: var(--theme-color);
     border-bottom: var(--font-color) solid 3px;
 }
 
@@ -78,6 +81,7 @@ header {
 }
 
 .login {
+
     width: fit-content;
 }
 

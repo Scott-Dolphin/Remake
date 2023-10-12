@@ -2,6 +2,7 @@ html {
     --font-serif: 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif';
     --font-mono: 'Avant Garde', 'Avantgarde', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif';
     --theme-color: #9fb8ad;
+    --sub-theme-color: #475841;
     --font-color: #3f403f;
     font-size: 18px;
 }
@@ -307,7 +308,7 @@ section h2 {
     text-decoration: none;
     font-size: .875em;
     display: block;
-    color: var(--theme-color);
+    color: var(--sub-theme-color);
     text-align: right;
     width: 100%;
 }
@@ -335,7 +336,7 @@ section h2 {
 .popular-header {
     --font-color: #fff;
     color: var(--font-color);
-    background: var(--theme-color);
+    background: var(--sub-theme-color);
     margin-top: -1px;
     /* blocks.css sizing quirk */
 }
