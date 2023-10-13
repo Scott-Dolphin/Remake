@@ -3,12 +3,11 @@
         <div class="left">
             <a href="/">Shelf.page</a>
             <a href="/about">About</a>
-            <a href="/">Something</a>
         </div>
         <div class="right">
             {{#if currentUser}}
             <a href="/user/logout">Log out</a>
-            <a href="/{{currentUser.details.username}}">Your shelf &rarr;</a>
+            <a href="/{{currentUser.details.username}}">Your Workout &rarr;</a>
             {{else}}
             <a href="/user/login">Log in</a>
             <a href="/user/signup">Sign up &rarr;</a>
