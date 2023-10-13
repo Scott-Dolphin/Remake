@@ -279,7 +279,13 @@ html {
     background-color: rgba(225,211,193, .5);
 }
 
+.events-container h1 {
+    font-size: 20px;
+}
 
+.events-container h2 {
+    font-size: 16px;
+}
 
 .events-list h1, .events-list h2, h3 {
     padding: 0;
