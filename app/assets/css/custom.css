@@ -285,3 +285,7 @@ html {
     padding: 0;
     margin: 0;
 }
+
+.about p {
+    text-align: center;
+}
