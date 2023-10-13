@@ -5,7 +5,7 @@ header {
     --theme-color: #9fb8ad;
     --sub-theme-color: #475841;
     --font-color: #3f403f;
-
+    --off-white: #e6e8e6;
 }
 
 .entrynav {
@@ -27,14 +27,24 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: .2s;
     border-left: var(--font-color) solid 3px;
     border-right: var(--font-color) solid 3px;
 }
 
 .entrynav .left a,
 .entrynav .right a {
-    margin: .6em;
-    color: var(--font-color);
+    /* margin: .6em; */
+    color: var(--off-white);
+    transition: .2s;
+    padding: 15px;
+    position: relative;
+}
+
+.entrynav .left a:hover,
+.entrynav .right a:hover {
+    background-color: var(--off-white);
+    color: #3f403f;
 }
 
 .entryTitle {

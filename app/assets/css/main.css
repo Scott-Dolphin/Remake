@@ -4,6 +4,7 @@ html {
     --theme-color: #9fb8ad;
     --sub-theme-color: #475841;
     --font-color: #3f403f;
+    --off-white: #e6e8e6;
     font-size: 18px;
 }
 
@@ -359,15 +360,29 @@ hr {
 
 footer {
     padding: 1.4em 0;
+    background: var(--theme-color);
+    box-shadow: 0 4px rgba(0, 0, 0, .3);
 }
 
-footer p {
+footer p, footer a {
     font-style: italic;
+}
+
+footer a{
+    padding: 3px;
+    transition: .2s;
+}
+
+footer a:hover, footer a:focus{
+    border-radius: 5px;
+    background-color: var(--off-white);
 }
 
 footer a.remake {
     font-weight: bold;
 }
+
+
 
 @media only screen and (min-width: 700px) {
     .sidebar-split {
