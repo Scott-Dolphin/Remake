@@ -114,6 +114,13 @@ button {
     text-align: center;
 }
 
+.bio {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -221,40 +228,43 @@ button {
 }
 
 .events-page {
-    height: 75vh;
+    min-height: 75vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
 }
 
 .events-container {
     /* background-color: var(--theme-color); */
-    height: 90%;
+    min-height: 90%;
     width: 90%;
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    overflow-x: scroll;
+    overflow-y: auto;
+    margin-top: 1rem;
+    align-items: center;
 }
 
 .events-list {
-
     list-style-type: none;
-    height: 100%;
-    width: 120%;
+    min-height: 100%;
+    width: 95%;
     margin: 1rem;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-height: 100%;
+    justify-items: center;
     /* overflow: scroll; */
 }
 
 .events-list li {
     background-color: var(--off-white);
-
     width: 90%;
-    height: 90%;
+    max-height: 90%;
     border: 1px solid black;
     float: left;
     display: flex;
@@ -272,7 +282,7 @@ button {
     background-color: var(--theme-color);
     border: 1px solid var(--font-color);
     width: 100%;
-    height: 20%;
+    min-height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,18 +301,16 @@ button {
     background-color: antiquewhite;
     border: 1px solid var(--font-color);
     width: 100%;
-    height: 90%;
+    min-height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
-
-
 }
 
 .exercises-container {
     height: 95%;
     width: 100%;
+    max-height: 95%;
 }
 
 
@@ -312,6 +320,8 @@ button {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 95%;
+    margin-bottom: 1rem;
 }
 
 
@@ -333,12 +343,24 @@ button {
 .events-list h1,
 .events-list h2,
 h3 {
-
     padding: 0;
     margin: 0;
+}
+
+.exercises-container li {
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    height: 20%;
 }
 
 .about p {
     text-align: center;
     padding: 0 5px 0 5px;
+}
+
+button {
+    width: 80%;
+    background: var(--theme-color);
+    margin-bottom: 5px;
 }

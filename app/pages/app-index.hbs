@@ -7,7 +7,7 @@
         <div class="right">
             {{#if currentUser}}
             <a href="/user/logout">Log out</a>
-            <a href="/{{currentUser.details.username}}">Your Workout &rarr;</a>
+            <a href="/{{currentUser.details.username}}">Your workout &rarr;</a>
             {{else}}
             <a href="/user/login">Log in</a>
             <a href="/user/signup">Sign up &rarr;</a>
@@ -17,7 +17,7 @@
 </header>
 
 <div class="hero">
-    <h1>Your Events</h1>
+    <h1>Your Workout Schedule</h1>
 </div>
 
 <div class="events-page">
@@ -27,10 +27,10 @@
             <li object key:name="@search" key:day="@search">
                 <div class="workout-header" edit:name edit:day>
                     <h1 object target:name="@innerText">
-                        {{default workout.name "Event goes here"}}
+                        {{default workout.name "Muslce Group"}}
                     </h1>
                     <h2 object target:day="@innerText">
-                        {{default workout.day "Everyday"}}
+                        {{default workout.day "Day"}}
                     </h2>
                 </div>
                 <div class="workout-body">
