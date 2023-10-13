@@ -37,7 +37,7 @@
                 <div class="workout-body">
                     <div object class="exercises-container">
                         <ul array sortable key="exercises">
-                            {{#for exercise in exercises}}
+                            {{#for exercise in workout.exercises}}
                                 <li object key:name="@search" key:sets="@search" edit:name edit:sets>
                                     <h2 object target:name="@innerText">
                                         {{default exercise.name "Bench"}}

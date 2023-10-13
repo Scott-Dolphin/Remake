@@ -281,7 +281,17 @@ button {
 
 .exercises-container {
     height: 95%;
+    width: 100%;
 }
+
+.exercises-container ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .events-container li {
     border: 1px solid;
     border-radius: 6px;
@@ -296,7 +306,17 @@ button {
     font-size: 16px;
 }
 
-.events-list h1, .events-list h2, h3 {
+.events-list h3 {
+    font-size: 12px;
+}
+
+.exercises-container li {
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.events-list h1, .events-list h2, .events-list h3 {
     padding: 0;
     margin: 0;
 }
