@@ -24,7 +24,7 @@
     <div object class="events-container">
         <ul array sortable key="workouts" class="events-list">
             {{#for workout in workouts}}
-            <li object key:name="@search" key:day="@search">
+            <li object key:name="@search" key:day="@search" class="workout">
                 <div class="workout-header" edit:name edit:day>
                     <h1 object target:name="@innerText">
                         {{default workout.name "Muslce Group"}}
