@@ -4,6 +4,7 @@ html {
     --font-color: #3f403f;
     --off-white: #e6e8e6;
 }
+
 /* 
 button {
     height: 3em;
@@ -295,7 +296,7 @@ button {
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
-    
+
 
 }
 
@@ -339,4 +340,5 @@ h3 {
 
 .about p {
     text-align: center;
+    padding: 0 5px 0 5px;
 }
