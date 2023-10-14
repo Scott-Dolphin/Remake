@@ -34,7 +34,13 @@ There are a few special pages you should know about:
 git fetch origin
 git merge origin/master
 
-
 ```
 
-
+# User Pages
+    All the entry pages used when login, signup, forget password, reset password request are made.
+# About Page
+    Gives a brief introduction of all the members of the group
+# App-Index Page
+    Contains the main application. Workout Planner fully functional and only visible in this page
+# Index Page
+    Landing page when user is not logged in. Has brief explanation of the websites purpose and a sample of how the Planner works.
